@@ -1,0 +1,699 @@
+Imagination Bazaar New Ui
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="scroll-tracker"></div>
+    <header
+      class="fixed bg-white shadow-md z-50 w-full px-5 py-1 flex justify-between items-center"
+    >
+      <div
+        class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
+      >
+        <a
+          class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
+        >
+          <span class="ml-3 text-5xl text-orange-500"
+            >Imagination <span class="text-purple-500">Bazaar</span></span
+          >
+          <span class="ml-3 text-5xl">🛒</span>
+        </a>
+        <nav
+          class="md:ml-auto flex flex-wrap items-center text-base justify-center"
+        >
+          <a
+            class="mr-5 hover:text-purple-500 font-medium cursor-pointer"
+            href="#gallery"
+            >Home <span>🏠</span></a
+          >
+          <a class="mr-5 hover:text-purple-500 font-medium cursor-pointer"
+            >Products <span>🏬</span></a
+          >
+          <a class="mr-5 hover:text-purple-500 font-medium cursor-pointer"
+            >Cart <span>🛒</span></a
+          >
+          <a class="mr-5 hover:text-purple-500 font-medium cursor-pointer"
+            >Login <span>👨</span></a
+          >
+        </nav>
+        <button
+          class="inline-flex items-center text-white bg-purple-500 border-0 py-2 px-4 focus:outline-none hover:bg-purple-600 rounded text-base mt-4 md:mt-0"
+        >
+          Sign Up
+          <svg
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            class="w-4 h-4 ml-1"
+            viewBox="0 0 24 24"
+          >
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <div>
+      <section class="text-gray-600 body-font">
+        <div
+          class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
+        >
+          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+            <img
+              class="object-cover object-center rounded"
+              alt="hero"
+              src="../assets/My project-2 (1).png"
+            />
+          </div>
+          <div
+            class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center"
+          >
+            <h1
+              class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900"
+            >
+              Welcome to Imagination Bazaar <span>🛍️</span>
+            </h1>
+            <p class="mb-8 leading-relaxed">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Blanditiis molestiae, deleniti, eligendi saepe quos ipsam soluta
+              at obcaecati culpa temporibus optio quae, quaerat ad
+              necessitatibus? Aliquid, itaque laborum iure, ducimus eligendi
+              laboriosam voluptas quo aliquam corporis ipsam minus voluptatum
+              nihil, pariatur nobis quibusdam magnam enim aspernatur architecto.
+              Vitae vero culpa doloremque ut voluptatem non veniam est accusamus
+              distinctio, earum molestiae fuga repellat. Cumque, dolore?
+            </p>
+            <div class="flex justify-center">
+              <button
+                class="inline-flex text-white bg-purple-500 border-0 py-2 px-6 focus:outline-none hover:bg-purple-600 rounded text-lg"
+              >
+                Shop Now
+              </button>
+              <button
+                class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg"
+              >
+                About Us
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Search Bar -->
+    <div style="max-width: 700px; margin: 100px auto">
+      <form class="flex items-center">
+        <label for="voice-search" class="sr-only">Search</label>
+        <div class="relative w-full">
+          <div
+            class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none"
+          >
+            <svg
+              aria-hidden="true"
+              class="w-5 h-5 text-gray-500"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </div>
+          <input
+            type="text"
+            id="voice-search"
+            class="bg-gray-50 border border-gray-300 shadow-lg text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5"
+            placeholder="Search Products...."
+            required=""
+          />
+          <button
+            type="button"
+            class="flex shadow-lg absolute inset-y-0 right-0 items-center pr-3"
+          >
+            <svg
+              aria-hidden="true"
+              class="w-4 h-4 text-gray-500 hover:text-gray-900"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M7 4a3 3 0 016 0v4a3 3 0 11-6 0V4zm4 10.93A7.001 7.001 0 0017 8a1 1 0 10-2 0A5 5 0 015 8a1 1 0 00-2 0 7.001 7.001 0 006 6.93V17H6a1 1 0 100 2h8a1 1 0 100-2h-3v-2.07z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <button
+          type="submit"
+          class="inline-flex items-center shadow-lg py-2.5 px-3 ml-2 text-sm font-medium text-white bg-violet-500 border border-violet-700 hover:bg-violet-500 focus:ring-4 focus:outline-none focus:ring-violet-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        >
+          <svg
+            aria-hidden="true"
+            class="mr-2 -ml-1 w-5 h-5"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+            ></path>
+          </svg>
+          Search
+        </button>
+      </form>
+    </div>
+    <!-- Products -->
+    <section class="text-gray-600 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div
+          class="flex flex-wrap w-full mb-20 flex-col items-center text-center"
+        >
+          <h1
+            class="sm:text-3xl text-2xl font-medium title-font mb-2 text-violet-500"
+          >
+            Explore Our Bazaar
+          </h1>
+          <p class="lg:w-1/2 w-full leading-relaxed opacity-50 text-gray-500">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui impedit
+            ratione facere? Sapiente magni culpa eaque.
+          </p>
+        </div>
+        <div class="flex flex-wrap -m-4">
+          <div class="xl:w-1/3 md:w-1/2 p-4">
+            <div class="border border-gray-200 p-6 rounded-lg">
+              <div
+                class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-purple-100 text-purple-500 mb-4"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-tools-kitchen"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M4 3h8l-1 9h-6z" />
+                  <path d="M7 18h2v3h-2z" />
+                  <path d="M20 3v12h-5c-.023 -3.681 .184 -7.406 5 -12z" />
+                  <path d="M20 15v6h-1v-3" />
+                  <line x1="8" y1="12" x2="8" y2="18" />
+                </svg>
+              </div>
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-2">
+                Kitchen
+              </h2>
+              <p class="leading-relaxed text-base">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Veritatis voluptate nobis quo incidunt impedit? Quae, possimus?
+              </p>
+            </div>
+          </div>
+          <div class="xl:w-1/3 md:w-1/2 p-4">
+            <div class="border border-gray-200 p-6 rounded-lg">
+              <div
+                class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-purple-100 text-purple-500 mb-4"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-book"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+                  <path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+                  <line x1="3" y1="6" x2="3" y2="19" />
+                  <line x1="12" y1="6" x2="12" y2="19" />
+                  <line x1="21" y1="6" x2="21" y2="19" />
+                </svg>
+              </div>
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-2">
+                Education
+              </h2>
+              <p class="leading-relaxed text-base">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
+                neque. Assumenda aperiam aliquid consectetur tenetur fugit.
+              </p>
+            </div>
+          </div>
+          <div class="xl:w-1/3 md:w-1/2 p-4">
+            <div class="border border-gray-200 p-6 rounded-lg">
+              <div
+                class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-purple-100 text-purple-500 mb-4"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-devices"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <rect x="13" y="8" width="8" height="12" rx="1" />
+                  <path
+                    d="M18 8v-3a1 1 0 0 0 -1 -1h-13a1 1 0 0 0 -1 1v12a1 1 0 0 0 1 1h9"
+                  />
+                  <line x1="16" y1="9" x2="18" y2="9" />
+                </svg>
+              </div>
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-2">
+                Electronic Gadgets
+              </h2>
+              <p class="leading-relaxed text-base">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+                accusamus consectetur eius ea quae cumque debitis.
+              </p>
+            </div>
+          </div>
+          <div class="xl:w-1/3 md:w-1/2 p-4">
+            <div class="border border-gray-200 p-6 rounded-lg">
+              <div
+                class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-purple-100 text-purple-500 mb-4"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-ball-american-football"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <line x1="15" y1="9" x2="9" y2="15" />
+                  <line x1="10" y1="12" x2="12" y2="14" />
+                  <line x1="12" y1="10" x2="14" y2="12" />
+                  <path d="M8 21a5 5 0 0 0 -5 -5" />
+                  <path
+                    d="M16 3c-7.18 0 -13 5.82 -13 13a5 5 0 0 0 5 5c7.18 0 13 -5.82 13 -13a5 5 0 0 0 -5 -5"
+                  />
+                  <path d="M16 3a5 5 0 0 0 5 5" />
+                </svg>
+              </div>
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-2">
+                Sports & Games
+              </h2>
+              <p class="leading-relaxed text-base">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum
+                dignissimos autem asperiores dicta soluta aliquid ex.
+              </p>
+            </div>
+          </div>
+          <div class="xl:w-1/3 md:w-1/2 p-4">
+            <div class="border border-gray-200 p-6 rounded-lg">
+              <div
+                class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-purple-100 text-purple-500 mb-4"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-hanger"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M15 7a3 3 0 1 0 -3 3v2m0 0l-8.624 5.488a0.82 .82 0 0 0 .44 1.512h16.368a0.82 .82 0 0 0 .44 -1.512l-8.624 -5.488z"
+                  />
+                </svg>
+              </div>
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-2">
+                Clothing
+              </h2>
+              <p class="leading-relaxed text-base">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Provident temporibus odio eaque praesentium commodi. Animi,
+                explicabo.
+              </p>
+            </div>
+          </div>
+          <div class="xl:w-1/3 md:w-1/2 p-4">
+            <div class="border border-gray-200 p-6 rounded-lg">
+              <div
+                class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-purple-100 text-purple-500 mb-4"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-stethoscope"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M6 4h-1a2 2 0 0 0 -2 2v3.5h0a5.5 5.5 0 0 0 11 0v-3.5a2 2 0 0 0 -2 -2h-1"
+                  />
+                  <path d="M8 15a6 6 0 1 0 12 0v-3" />
+                  <path d="M11 3v2" />
+                  <path d="M6 3v2" />
+                  <circle cx="20" cy="10" r="2" />
+                </svg>
+              </div>
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-2">
+                Health Center
+              </h2>
+              <p class="leading-relaxed text-base">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+                voluptatibus quo modi praesentium ipsum aspernatur nulla!
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="flex mx-auto mt-16 text-white bg-purple-500 border-0 py-2 px-8 focus:outline-none hover:bg-purple-600 rounded text-lg"
+        >
+          Explore Sections
+        </button>
+      </div>
+    </section>
+    <!-- Contact Us -->
+    <section class="text-gray-600 body-font relative">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-col text-center w-full mb-12">
+          <h1
+            class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900"
+          >
+            Contact Us
+          </h1>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-base opacity-50">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+            veritatis modi ratione reiciendis nam odit ipsam.
+          </p>
+        </div>
+        <div class="lg:w-1/2 md:w-2/3 mx-auto">
+          <div class="flex flex-wrap -m-2">
+            <div class="p-2 w-1/2">
+              <div class="relative">
+                <label for="name" class="leading-7 text-sm text-gray-600"
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-purple-500 focus:bg-white focus:ring-2 focus:ring-purple-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                />
+              </div>
+            </div>
+            <div class="p-2 w-1/2">
+              <div class="relative">
+                <label for="email" class="leading-7 text-sm text-gray-600"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-purple-500 focus:bg-white focus:ring-2 focus:ring-purple-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                />
+              </div>
+            </div>
+            <div class="p-2 w-full">
+              <div class="relative">
+                <label for="message" class="leading-7 text-sm text-gray-600"
+                  >Message</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-purple-500 focus:bg-white focus:ring-2 focus:ring-purple-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                ></textarea>
+              </div>
+            </div>
+            <div class="p-2 w-full">
+              <button
+                class="flex mx-auto text-white bg-purple-500 border-0 py-2 px-8 focus:outline-none hover:bg-purple-600 rounded text-lg"
+              >
+                Send
+              </button>
+            </div>
+            <div
+              class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center"
+            >
+              <a class="text-purple-500">ImaginationBazaar@email.com</a>
+              <p class="leading-normal my-5">
+                ABCD St. <br />XYZ street, RPQS State
+              </p>
+              <span class="inline-flex">
+                <a class="text-violet-500">
+                  <svg
+                    fill="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="w-5 h-5"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+                    ></path>
+                  </svg>
+                </a>
+                <a class="ml-4 text-violet-500">
+                  <svg
+                    fill="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="w-5 h-5"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+                    ></path>
+                  </svg>
+                </a>
+                <a class="ml-4 text-violet-500">
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="w-5 h-5"
+                    viewBox="0 0 24 24"
+                  >
+                    <rect
+                      width="20"
+                      height="20"
+                      x="2"
+                      y="2"
+                      rx="5"
+                      ry="5"
+                    ></rect>
+                    <path
+                      d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
+                    ></path>
+                  </svg>
+                </a>
+                <a class="ml-4 text-violet-500">
+                  <svg
+                    fill="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="w-5 h-5"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"
+                    ></path>
+                  </svg>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="text-gray-600 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-wrap md:text-left text-center order-first">
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h2
+              class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3"
+            >
+              Company
+            </h2>
+            <nav class="list-none mb-10">
+              <li><a href="#">about us</a></li>
+              <li><a href="#">our services</a></li>
+              <li><a href="#">privacy policy</a></li>
+              <li><a href="#">affiliate program</a></li>
+            </nav>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h2
+              class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3"
+            >
+              GET HELP
+            </h2>
+            <nav class="list-none mb-10">
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">shipping</a></li>
+              <li><a href="#">returns</a></li>
+              <li><a href="#">order status</a></li>
+              <li><a href="#">payment options</a></li>
+            </nav>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h2
+              class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3"
+            >
+              CATEGORIES
+            </h2>
+            <nav class="list-none mb-10">
+              <li><a href="#">Watch</a></li>
+              <li><a href="#">Bag</a></li>
+              <li><a href="#">Shoes</a></li>
+              <li><a href="#">Dress</a></li>
+            </nav>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <div
+              class="flex xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start"
+            >
+              <div class="relative w-40 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4 mr-2">
+                <input
+                  type="text"
+                  id="footer-field"
+                  name="footer-field"
+                  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:bg-transparent focus:ring-2 focus:ring-purple-200 focus:border-purple-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                />
+              </div>
+              <button
+                class="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-purple-500 border-0 py-2 px-6 focus:outline-none hover:bg-purple-600 rounded"
+              >
+                Search
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-gray-100">
+        <div
+          class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col"
+        >
+          <a
+            class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
+          >
+            <span class="ml-3 text-xl">Imagination Bazaar</span>
+          </a>
+
+          <span
+            class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start"
+          >
+            <a class="text-gray-500">
+              <svg
+                fill="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+                ></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg
+                fill="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+                ></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+              >
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path
+                  d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
+                ></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg
+                fill="currentColor"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="0"
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="none"
+                  d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+                ></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a>
+          </span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
